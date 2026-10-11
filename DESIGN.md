@@ -2,7 +2,7 @@
 
 ## Overview
 
-PEPE Ladder is a compact arcade game for a quick risk-and-reward climb. Its night pond uses deep green surfaces, a teal illustrated playfield, rounded lily pads, an expressive frog and a warm gold coin pot. The playable area is the main content. A quieter side column explains hazards and holds personal records; there is no separate marketing page or pre-run menu sequence.
+PEPE Ladder is a compact arcade game for a quick risk-and-reward climb. Its night pond uses deep green surfaces, a teal illustrated playfield, rounded lily pads, an expressive frog and a warm gold coin pot. The playable area is the main content. A quieter side column explains hazards and holds personal records; there is no separate marketing page or pre-run menu sequence. The opening pairs a factual product description with “One more pad?”, gameplay directions and Hop in; no promotional pill or extra intro/help tagline competes with that action.
 
 The source of truth is `src/style.css` for the interface, `src/renderer.ts` for the canvas illustration, and `index.html` for structure. `src/main.ts` handles component states. The cover is original vector art in `src/assets/cover.svg`, rasterized using the same local fonts by `scripts/render-cover.mjs`.
 
@@ -32,7 +32,7 @@ Gold signals a reward or the main action. Ready, active and modal states each ha
 
 Two locally bundled WOFF2 families are defined with `@font-face`. The production build embeds the font bytes in the stylesheet to support the opaque sandbox without CORS dependencies.
 
-- **Nunito Sans** is named `Nunito` in CSS, with `ui-sans-serif, system-ui, sans-serif` fallbacks. Its variable file provides the requested 200–900 range. Actual interface weights are 500, 600, 700, 800 and 900. Body line height is 1.5.
+- **Nunito Sans** is named `Nunito` in CSS, with `ui-sans-serif, system-ui, sans-serif` fallbacks. Its variable file provides the requested 200–900 range. Actual interface weights are 500 for body/supporting text and 800 for emphasis, controls and keycaps. Body line height is 1.5. Together with Lilita 400, the interface uses three weights.
 - **Lilita One**, named `Lilita`, uses its real 400 weight for the game title, intro/modal headings and result number, with rounded/system sans fallbacks. Short headings use 1.1–1.2 line height.
 - `font-synthesis: none` avoids invented faces. The actual fonts loaded in the checked desktop/mobile and opaque iframe states. Both licenses ship in `public/fonts/` and `dist/fonts/`.
 
@@ -54,6 +54,7 @@ Implemented breakpoints:
 - **540px and below:** 14px page insets, one-column aside, 32px title, 20px stats, 44px scene utility buttons and touch instructions. Keyboard keycaps are hidden. The ready scene uses viewport-aware height and a 26rem minimum so enlarged intro text stays inside it.
 - **360px and below:** 10px page insets and less decorative HUD detail.
 - **During mobile play:** `body.in-run` hides the introductory page header and gives the game the first viewport; instructions and records remain below it. BANK stays in the bottom action bar.
+- **Mobile results at widths up to 540px and heights up to 650px:** hide the decorative result frog, use `--fs-lg` (20px) for the result heading and `--fs-title` (32px) for the score. Loss copy, records and the full 52px restart button fit without card scrolling at the checked 320×568, 390×568 and 540×650 sizes. Taller mobile and desktop results retain their larger presentation.
 - **Short desktop/landscape play:** height queries at 950px and 650px compact or hide page chrome, reduce scene height and preserve controls. `Renderer.resize()` adjusts illustration scale and `Game.cameraFollow` to keep the frog visible in the shorter scene.
 
 Inspected ready widths are 320, 390, 820, 1024 and 1440px. Active layout measurements include 320×568 and 844×390. Text was enlarged to 200% at 820px; native browser zoom was not exercised. The product is English-only; RTL/localization is not implemented.
@@ -63,6 +64,8 @@ Inspected ready widths are 320, 390, 820, 1024 and 1440px. Active layout measure
 Page and cards use tonal green differences, low-contrast structural borders and restrained shadows. The game shell uses `0 18px 60px #0000001c`. Gold buttons have a four-pixel darker gold base and a soft shadow to suggest a physical arcade control. The pause/result layer adds a dark scrim and a 6px backdrop blur, with a stronger card shadow.
 
 The canvas is the lowest game layer. Scene tools and toasts are at z-index 3; dialogs are at 5. The skip link is at 20. Decorative canvas art and notification layers do not intercept button input. Modals make the surrounding content inert, move focus inside, trap Tab, and return focus to the pond on resume.
+
+During a run, pointer clicks/taps on Sound, either hop button or BANK return focus to the pond without scrolling. The next Space/Enter therefore hops/banks. Buttons reached with Tab retain focus and native Space/Enter activation.
 
 ## Shapes
 
@@ -80,7 +83,7 @@ The canvas is the lowest game layer. Scene tools and toasts are at z-index 3; di
 | Pond                 | `Renderer` in `src/renderer.ts`    | Resizes at capped 2× pixel density; original night scene, rare flies, three frog expressions and pot growth/shake |
 | Pad warning          | `.play-status`, `.pad-timer`       | Named hazard/direction plus a draining life bar; final 10 seconds explicitly prompt BANK                          |
 | Feedback             | `.pond-toast`, `role="status"`     | Short banking/combo/fly announcements; static text supplements particle effects                                   |
-| Pause/result dialogs | `.overlay`, `.overlay-card`        | Native buttons, bounded scrollable card, inert background and focus trap; restart begins immediately              |
+| Pause/result dialogs | `.overlay`, `.overlay-card`        | Native buttons, bounded card with overflow fallback, inert background and focus trap; compact mobile results fit without scrolling and restart begins immediately |
 | Records              | `.records-card`, `RecordStore`     | Local bests and streak; visible session-only fallback; corrupt records safely reset                               |
 | Help                 | `.how-card`, `.pond-guide`         | Three steps, clear pad symbols and golden-fly explanation; normal document flow                                   |
 

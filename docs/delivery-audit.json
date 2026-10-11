@@ -1,11 +1,10 @@
 {
   "budgetBytes": 8388608,
-  "portableFileCount": 47,
-  "portableBytesExcludingThisAudit": 2424688,
-  "portableTarGzipBytesExcludingThisAudit": 2151924,
-  "allDeliverableBytesIncludingSeparateArtifactsExcludingThisAudit": 5738860,
-  "distBytes": 391735,
-  "note": "Portable set excludes supplied input/metadata directories and the seat-excluded artifacts directory. It includes source, lockfile, export, docs and five screenshots. This is a conservative file-size and tar-gzip audit, not a claim to have written Git metadata or created the final network Git bundle.",
+  "portableFileCount": 53,
+  "portableBytesExcludingThisAudit": 2541244,
+  "portableTarGzipBytesExcludingThisAudit": 2244300,
+  "distBytes": 391395,
+  "note": "Revision snapshot candidates exclude Git metadata, supplied inputs, ephemeral scratch and seat-excluded artifacts. Includes source, lockfile, complete export, documentation, responses and seven screenshots. No ignore files or Git metadata were edited. This is a conservative file-size/tar audit, not a claim to have created the network Git bundle.",
   "coverDimensions": [
     1200,
     630
@@ -15,9 +14,9 @@
   "forbiddenDependencyCacheArchivePaths": [],
   "runtime": [
     {
-      "path": "dist/assets/index-jsZhfT-o.js",
-      "bytes": 100614,
-      "sha256": "c9f5892bb8f50d8299dfe7a254c8f03730bdcea0cd3e1e5c58264c740b6b7a21"
+      "path": "dist/assets/index-Bpz9Qy4h.js",
+      "bytes": 100500,
+      "sha256": "46c5f99cc4278e583a408a2c404a0d7f8b929d162d467cf836e1437cd08d73f7"
     },
     {
       "path": "dist/cover.png",
@@ -56,8 +55,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 13702,
-      "sha256": "6ed9e4fd493f3c363973ab52d913f4d0420fb9d63b2071080c9b4b02e72196a0"
+      "bytes": 13476,
+      "sha256": "5ef19724a60743b6b55d924a6f7980ede3a9317f1c11fc1f521bb6ad9ef9f2d5"
     },
     {
       "path": "dist/pepe-game.json",

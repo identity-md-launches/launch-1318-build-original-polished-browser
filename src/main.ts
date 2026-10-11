@@ -232,6 +232,12 @@ el("sound-button").addEventListener("click", toggleSound);
 el("hop-left").addEventListener("click", () => hop(-1));
 el("hop-right").addEventListener("click", () => hop(1));
 el("bank-button").addEventListener("click", bank);
+// Pointer controls hand focus back to the game; Tab keeps native button activation.
+for (const id of ["sound-button", "hop-left", "hop-right", "bank-button"])
+  el(id).addEventListener("click", (event) => {
+    if (event.detail > 0 && game.phase === "playing")
+      canvas.focus({ preventScroll: true });
+  });
 canvas.addEventListener("pointerdown", (event) => {
   if (event.button !== 0) return;
   if (game.phase !== "playing") return;

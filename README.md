@@ -15,7 +15,7 @@ Select **Hop in**. The first pad is to the left.
 | Restart        | Activate One more run        | Tap One more run once                                    |
 | Sound          | Activate the speaker button  | Tap the speaker button                                   |
 
-Space and Enter retain normal activation when a button has keyboard focus. Aiming persists until you change direction. The dotted arc shows your aim. Hops take 0.58 seconds; moving pads can drift away from the point you aimed at. Input is processed immediately, and there is no run-start countdown.
+Space and Enter retain normal activation when a button is reached with Tab. During a run, clicking/tapping Sound, a hop button or BANK returns focus to the pond so the next keyboard action hops/banks. Aiming persists until you change direction. The dotted arc shows your aim. Hops take 0.58 seconds; moving pads can drift away from the point you aimed at. Input is processed immediately, and there is no run-start countdown.
 
 - Each new pad adds to the **current pot**. Only **banked score** counts after a fall.
 - BANK saves the pot, resets the combo to ×1, and works in midair—even during the brief fall before the splash.
@@ -29,7 +29,7 @@ Best score, best height, streak and sound preference are saved locally when stor
 
 ## Install, develop and preview
 
-Use Node **22.18 or later** (tested with Node 24.9.0) and npm. Install dependencies normally:
+Use Node **22.18 or later** (revision tested with Node 22.23.3) and npm. Install dependencies normally:
 
 ```sh
 npm ci
@@ -65,12 +65,12 @@ Actual results from this build:
 | `npm run typecheck`                                       | Passed; no TypeScript diagnostics                                                                    |
 | `npm run build`                                           | Passed; complete static export produced                                                              |
 | `npm test`                                                | 14 tests passed                                                                                      |
-| `npm run test:browser`                                    | 26 checks passed in Chromium 141.0.7390.37                                                           |
+| `npm run test:browser`                                    | 33 checks passed in Chromium 141.0.7390.37                                                           |
 | Axe scans: desktop ready, paused, game over; mobile ready | Zero detected violations; background/gradient contrast items still need manual interpretation        |
 | Runtime / resources                                       | Zero JavaScript errors, console errors or failed resource requests in the checked flows              |
 | Pacing simulation                                         | 100 seeded correct-direction runs: 28–50 seconds, mean 35.23 seconds; a simulation, not a user study |
 
-Checked keyboard and touch, banking/reset, combos, golden flies, pause/focus, instant restart, game over, visibility loss, muted startup, sound on/off/resume, high-pot heartbeat, persisted records, denied storage and bridge source/channel validation. Initial widths: 320, 390, 820, 1024 and 1440 CSS pixels. Active game checks also include 320×568, 540×720, 844×390 and 1024×768. The main action is visible on the initial 390-pixel screen; BANK remains in view during the checked active layouts.
+Checked keyboard and touch, banking/reset, combos, golden flies, pause/focus, instant restart, game over, visibility loss, muted startup, sound on/off/resume, high-pot heartbeat, persisted records, denied storage and bridge source/channel validation. Initial widths: 320, 390, 820, 1024 and 1440 CSS pixels. Active game checks also include 320×568, 540×720, 844×390 and 1024×768. The main action is visible on the initial 390-pixel screen; BANK remains in view during the checked active layouts. Revision checks also cover game over with a new personal best and with an unbanked loss at 320×568, 390×568, 540×650, 390×844 and 1440×900: all result text and the full restart button fit without scrolling. Mixed pointer/keyboard input and native Tab/Space/Enter button activation pass.
 
 The worker installed its toolchain and browser **under `/tmp`**, then invoked these same scripts with the external toolchain on `PATH`. Tests accept `PEPE_TOOLCHAIN` for that restricted environment; ordinary local installs do not need it.
 

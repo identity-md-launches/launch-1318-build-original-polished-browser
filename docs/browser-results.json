@@ -90,6 +90,34 @@
       "result": "pass"
     },
     {
+      "name": "game-over content and one-tap restart at 320×568",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 390×568",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 540×650",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 390×844",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1440×900",
+      "result": "pass"
+    },
+    {
+      "name": "pointer controls hand the next keyboard hop/bank back to the pond",
+      "result": "pass"
+    },
+    {
+      "name": "Tab-reached buttons retain native Space/Enter activation and focus",
+      "result": "pass"
+    },
+    {
       "name": "sandbox without same-origin storage renders local fonts and plays",
       "result": "pass"
     },
@@ -202,12 +230,6 @@
             },
             {
               "target": [
-                ".intro-chip"
-              ],
-              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
-            },
-            {
-              "target": [
                 "#intro > h2"
               ],
               "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
@@ -215,12 +237,6 @@
             {
               "target": [
                 "#intro > p"
-              ],
-              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
-            },
-            {
-              "target": [
-                ".intro-hint"
               ],
               "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
             },
@@ -529,12 +545,6 @@
             },
             {
               "target": [
-                ".intro-chip"
-              ],
-              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
-            },
-            {
-              "target": [
                 "#intro > h2"
               ],
               "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
@@ -542,12 +552,6 @@
             {
               "target": [
                 "#intro > p"
-              ],
-              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
-            },
-            {
-              "target": [
-                ".intro-hint"
               ],
               "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
             },
@@ -703,7 +707,7 @@
       "viewportWidth": 390,
       "viewportHeight": 844,
       "startVisible": true,
-      "bankBottom": 791.1875,
+      "bankBottom": 812.1875,
       "loadedFonts": [
         true,
         true
@@ -717,7 +721,7 @@
       "viewportWidth": 320,
       "viewportHeight": 740,
       "startVisible": true,
-      "bankBottom": 721.1875,
+      "bankBottom": 742.1875,
       "loadedFonts": [
         true,
         true
@@ -773,7 +777,7 @@
       "viewportWidth": 390,
       "viewportHeight": 844,
       "startVisible": true,
-      "bankBottom": 791.1875,
+      "bankBottom": 812.1875,
       "loadedFonts": [
         true,
         true
@@ -826,7 +830,7 @@
     "created": 1,
     "resumed": 1,
     "oscillators": 1,
-    "heartbeatNotes": 14,
+    "heartbeatNotes": 16,
     "state": "running",
     "highPot": 18450
   },
@@ -874,8 +878,531 @@
     {
       "name": "primary action",
       "foreground": "rgb(40, 49, 34)",
-      "background": "rgb(245, 205, 102)",
-      "ratio": 8.89
+      "background": "rgb(244, 204, 100)",
+      "ratio": 8.8
     }
-  ]
+  ],
+  "resultLayouts": [
+    {
+      "width": 320,
+      "height": 568,
+      "banked": true,
+      "clientHeight": 328,
+      "scrollHeight": 328,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24
+        },
+        {
+          "selector": "#loss-message",
+          "height": 42,
+          "visibleHeight": 42
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "banked": false,
+      "clientHeight": 289,
+      "scrollHeight": 289,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 568,
+      "banked": true,
+      "clientHeight": 307,
+      "scrollHeight": 307,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 568,
+      "banked": false,
+      "clientHeight": 289,
+      "scrollHeight": 289,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "height": 650,
+      "banked": true,
+      "clientHeight": 307,
+      "scrollHeight": 307,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "height": 650,
+      "banked": false,
+      "clientHeight": 289,
+      "scrollHeight": 289,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "banked": true,
+      "clientHeight": 394,
+      "scrollHeight": 394,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "banked": false,
+      "clientHeight": 376,
+      "scrollHeight": 376,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18
+        }
+      ]
+    }
+  ],
+  "typography": []
 }

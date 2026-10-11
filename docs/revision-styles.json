@@ -1,0 +1,34 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "description": "A frog-climbing game where you bank coins before you fall.",
+    "removedCopyElements": 0,
+    "weights": [
+      "400",
+      "500",
+      "800"
+    ],
+    "startBottom": 478.375,
+    "fonts": [
+      true,
+      true
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "description": "A frog-climbing game where you bank coins before you fall.",
+    "removedCopyElements": 0,
+    "weights": [
+      "400",
+      "500",
+      "800"
+    ],
+    "startBottom": 627.78125,
+    "fonts": [
+      true,
+      true
+    ]
+  }
+]

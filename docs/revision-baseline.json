@@ -1,0 +1,182 @@
+{
+  "browser": "141.0.7390.37",
+  "layouts": [
+    {
+      "width": 320,
+      "height": 568,
+      "score": "125",
+      "newBest": true,
+      "card": {
+        "top": 98,
+        "bottom": 428,
+        "clientHeight": 328,
+        "scrollHeight": 453,
+        "scrollTop": 0
+      },
+      "button": {
+        "top": 459.96875,
+        "bottom": 511.96875,
+        "height": 52,
+        "visible": 0
+      },
+      "focus": "restart-button"
+    },
+    {
+      "width": 390,
+      "height": 568,
+      "score": "125",
+      "newBest": true,
+      "card": {
+        "top": 98,
+        "bottom": 428,
+        "clientHeight": 328,
+        "scrollHeight": 394,
+        "scrollTop": 0
+      },
+      "button": {
+        "top": 400.578125,
+        "bottom": 452.578125,
+        "height": 52,
+        "visible": 27.421875
+      },
+      "focus": "restart-button"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "score": "125",
+      "newBest": true,
+      "card": {
+        "top": 203.203125,
+        "bottom": 598.78125,
+        "clientHeight": 394,
+        "scrollHeight": 394,
+        "scrollTop": 0
+      },
+      "button": {
+        "top": 505.78125,
+        "bottom": 557.78125,
+        "height": 52,
+        "visible": 52
+      },
+      "focus": "restart-button"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "score": "125",
+      "newBest": true,
+      "card": {
+        "top": 272.390625,
+        "bottom": 697.96875,
+        "clientHeight": 424,
+        "scrollHeight": 424,
+        "scrollTop": 0
+      },
+      "button": {
+        "top": 598.96875,
+        "bottom": 650.96875,
+        "height": 52,
+        "visible": 52
+      },
+      "focus": "restart-button"
+    }
+  ],
+  "inputs": [
+    {
+      "scenario": "hop-left then right-space",
+      "before": {
+        "focus": "hop-left",
+        "height": "1",
+        "pot": "100",
+        "score": "0",
+        "sound": "false",
+        "status": "Next pad: right"
+      },
+      "after": {
+        "focus": "hop-left",
+        "height": "1",
+        "pot": "100",
+        "score": "0",
+        "sound": "false",
+        "status": "Quick! Bank before the splash!"
+      }
+    },
+    {
+      "scenario": "sound then left-space",
+      "before": {
+        "focus": "sound-button",
+        "height": "0",
+        "pot": "0",
+        "score": "0",
+        "sound": "true",
+        "status": "First pad is left. Aim ←, then hop."
+      },
+      "after": {
+        "focus": "sound-button",
+        "height": "0",
+        "pot": "0",
+        "score": "0",
+        "sound": "false",
+        "status": "First pad is left. Aim ←, then hop."
+      }
+    },
+    {
+      "scenario": "sound then enter-bank",
+      "before": {
+        "focus": "sound-button",
+        "height": "1",
+        "pot": "100",
+        "score": "0",
+        "sound": "true",
+        "status": "Next pad: right"
+      },
+      "after": {
+        "focus": "sound-button",
+        "height": "1",
+        "pot": "100",
+        "score": "0",
+        "sound": "false",
+        "status": "Next pad: right"
+      }
+    }
+  ],
+  "ready": [
+    {
+      "width": 390,
+      "height": 844,
+      "copy": [
+        "A little frog. A very big gamble.",
+        "Risk a little. Ribbit a lot.",
+        "Free to play. Just bring your nerve.",
+        "A bigger combo. A bigger decision."
+      ],
+      "weights": [
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "copy": [
+        "A little frog. A very big gamble.",
+        "Risk a little. Ribbit a lot.",
+        "Free to play. Just bring your nerve.",
+        "A bigger combo. A bigger decision."
+      ],
+      "weights": [
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900"
+      ]
+    }
+  ]
+}

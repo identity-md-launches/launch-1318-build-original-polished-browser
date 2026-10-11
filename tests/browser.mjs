@@ -24,6 +24,7 @@ const evidence = {
   audio: {},
   bridge: {},
   contrast: [],
+  resultLayouts: [],
 };
 const mime = {
   ".html": "text/html",
@@ -494,7 +495,7 @@ try {
     );
     assert.ok(
       await page
-        .locator(".intro-hint")
+        .locator("#play-button")
         .evaluate(
           (el) =>
             el.getBoundingClientRect().bottom <=
@@ -583,6 +584,178 @@ try {
     },
   );
   await mobile.close();
+  for (const [width, height] of [
+    [320, 568],
+    [390, 568],
+    [540, 650],
+    [390, 844],
+    [1440, 900],
+  ]) {
+    await check(`game-over content and one-tap restart at ${width}×${height}`, async () => {
+      const context = await browser.newContext({
+        viewport: { width, height },
+        isMobile: width <= 540,
+        hasTouch: width <= 540,
+      });
+      try {
+        const resultPage = await context.newPage();
+        watch(resultPage, `result ${width}×${height}`);
+        await resultPage.goto(`${base}/preview/index.html`);
+        await resultPage.evaluate(() => document.fonts.ready);
+        await resultPage.clock.install();
+        const activate = async (id) => {
+          if (width <= 540) await resultPage.locator(id).tap();
+          else await resultPage.locator(id).click();
+        };
+        await activate("#play-button");
+        // Exercise both the extra new-best line and the unbanked near-miss copy.
+        for (const banked of [true, false]) {
+          await activate("#hop-left");
+          await expect(resultPage.locator("#pond")).toBeFocused();
+          await resultPage.clock.runFor(680);
+          if (banked) await activate("#bank-button");
+          await resultPage.clock.runFor(5500);
+          await expect(resultPage.locator("#over-overlay")).toBeVisible();
+          await expect(resultPage.locator("#final-score")).toHaveText(banked ? "125" : "0");
+          await expect(resultPage.locator("#result-best")).toHaveText("125");
+          await expect(resultPage.locator("#result-height")).toHaveText("1 m");
+          await expect(resultPage.locator("#result-streak")).toHaveText("1 day");
+          if (banked) await expect(resultPage.locator("#new-best")).toBeVisible();
+          else await expect(resultPage.locator("#loss-message")).toHaveText("Lost 100 — 1 pad from ×2.");
+          await expect(resultPage.locator("#restart-button")).toBeFocused();
+          // Measure before activating: locator clicks can scroll a clipped control into view.
+          const metrics = await resultPage.evaluate(() => {
+            const card = document.querySelector(".result-card"),
+              rect = card.getBoundingClientRect();
+            const content = ["#over-title", "#loss-message", "#final-score", "#result-best", "#result-height", "#result-streak", "#restart-button", "#run-detail"]
+              .map((selector) => {
+                const b = document.querySelector(selector).getBoundingClientRect();
+                return { selector, height: b.height, visibleHeight: Math.max(0, Math.min(b.bottom, rect.bottom - 1, innerHeight) - Math.max(b.top, rect.top + 1, 0)) };
+              });
+            return {
+              clientHeight: card.clientHeight,
+              scrollHeight: card.scrollHeight,
+              scrollTop: card.scrollTop,
+              horizontalOverflow: document.documentElement.scrollWidth > innerWidth,
+              frogVisible: document.querySelector(".result-frog").checkVisibility(),
+              content,
+            };
+          });
+          evidence.resultLayouts.push({ width, height, banked, ...metrics });
+          assert.equal(metrics.scrollTop, 0);
+          assert.equal(metrics.scrollHeight, metrics.clientHeight, "Result card must fit without scrolling");
+          assert.equal(metrics.horizontalOverflow, false);
+          assert.equal(metrics.frogVisible, !(width <= 540 && height <= 650));
+          for (const item of metrics.content)
+            assert.ok(item.visibleHeight >= item.height - 0.5, `${item.selector} clipped at ${width}×${height}: ${JSON.stringify(item)}`);
+          if (banked && height === 568)
+            await shot(resultPage, `result-${width}-${height}.png`);
+          await activate("#restart-button");
+          await expect(resultPage.locator("#over-overlay")).toBeHidden();
+          await expect(resultPage.locator("#height")).toHaveText("0");
+          await expect(resultPage.locator("#score")).toHaveText("0");
+          await expect(resultPage.locator("#pond")).toBeFocused();
+        }
+      } finally {
+        await context.close();
+      }
+    });
+  }
+  await check("pointer controls hand the next keyboard hop/bank back to the pond", async () => {
+    const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+    try {
+      const mixed = await context.newPage();
+      watch(mixed, "mixed input");
+      const freshRun = async () => {
+        await mixed.goto(`${base}/preview/index.html`);
+        await mixed.clock.install();
+        await mixed.locator("#play-button").click();
+      };
+      await freshRun();
+      await mixed.locator("#hop-left").click();
+      await expect(mixed.locator("#pond")).toBeFocused();
+      await mixed.clock.runFor(680);
+      await mixed.keyboard.press("ArrowRight");
+      await mixed.keyboard.press("Space");
+      await mixed.clock.runFor(680);
+      await expect(mixed.locator("#height")).toHaveText("2");
+      await expect(mixed.locator("#pot")).toHaveText("300");
+
+      await freshRun();
+      await mixed.locator("#sound-button").click();
+      await expect(mixed.locator("#pond")).toBeFocused();
+      const sound = await mixed.locator("#sound-button").getAttribute("aria-pressed");
+      await mixed.keyboard.press("ArrowLeft");
+      await mixed.keyboard.press("Space");
+      await mixed.clock.runFor(680);
+      await expect(mixed.locator("#height")).toHaveText("1");
+      await expect(mixed.locator("#sound-button")).toHaveAttribute("aria-pressed", sound);
+      await mixed.locator("#sound-button").click();
+      const toggled = await mixed.locator("#sound-button").getAttribute("aria-pressed");
+      await mixed.keyboard.press("Enter");
+      await expect(mixed.locator("#score")).toHaveText("125");
+      await expect(mixed.locator("#pot")).toHaveText("0");
+      await expect(mixed.locator("#sound-button")).toHaveAttribute("aria-pressed", toggled);
+
+      await freshRun();
+      await mixed.locator("#hop-left").click();
+      await mixed.clock.runFor(680);
+      await mixed.locator("#bank-button").click();
+      await expect(mixed.locator("#pond")).toBeFocused();
+      await mixed.keyboard.press("ArrowRight");
+      await mixed.keyboard.press("Space");
+      await mixed.clock.runFor(680);
+      await expect(mixed.locator("#height")).toHaveText("2");
+      await expect(mixed.locator("#score")).toHaveText("125");
+      await expect(mixed.locator("#pot")).toHaveText("100");
+
+      await freshRun();
+      await mixed.locator("#hop-left").click();
+      await mixed.clock.runFor(680);
+      await mixed.locator("#hop-right").click();
+      await expect(mixed.locator("#pond")).toBeFocused();
+      await mixed.clock.runFor(680);
+      const direction = (await mixed.locator("#pad-status").innerText()).includes("left") ? "ArrowLeft" : "ArrowRight";
+      await mixed.keyboard.press(direction);
+      await mixed.keyboard.press("Space");
+      await mixed.clock.runFor(680);
+      await expect(mixed.locator("#height")).toHaveText("3");
+    } finally {
+      await context.close();
+    }
+  });
+  await check("Tab-reached buttons retain native Space/Enter activation and focus", async () => {
+    const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+    try {
+      const keys = await context.newPage();
+      watch(keys, "native buttons");
+      await keys.goto(`${base}/preview/index.html`);
+      await keys.clock.install();
+      await keys.locator("#play-button").click();
+      await keys.keyboard.press("Tab");
+      await expect(keys.locator("#sound-button")).toBeFocused();
+      await keys.keyboard.press("Space");
+      await expect(keys.locator("#sound-button")).toHaveAttribute("aria-pressed", "true");
+      await expect(keys.locator("#sound-button")).toBeFocused();
+      await keys.keyboard.press("Enter");
+      await expect(keys.locator("#sound-button")).toHaveAttribute("aria-pressed", "false");
+      await expect(keys.locator("#sound-button")).toBeFocused();
+      await keys.keyboard.press("Tab");
+      await keys.keyboard.press("Tab");
+      await expect(keys.locator("#hop-left")).toBeFocused();
+      await keys.keyboard.press("Space");
+      await keys.clock.runFor(680);
+      await expect(keys.locator("#height")).toHaveText("1");
+      await expect(keys.locator("#hop-left")).toBeFocused();
+      await keys.keyboard.press("Tab");
+      await expect(keys.locator("#bank-button")).toBeFocused();
+      await keys.keyboard.press("Enter");
+      await expect(keys.locator("#score")).toHaveText("125");
+      await expect(keys.locator("#pot")).toHaveText("0");
+    } finally {
+      await context.close();
+    }
+  });
   const sandbox = await browser.newContext({
     viewport: { width: 1100, height: 950 },
   });
