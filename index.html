@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#10231f" />
+    <title>PEPE Ladder — One more pad?</title>
+    <meta
+      name="description"
+      content="Climb a magical moonlit pond. Grow your coin pot, catch golden flies, and bank before you sink. A free arcade game for Pepe2Pepe."
+    />
+    <meta property="og:title" content="PEPE Ladder — One more pad?" />
+    <meta
+      property="og:description"
+      content="A little frog. A very big gamble. Hop higher and bank your coins before the pond takes them back."
+    />
+    <meta property="og:image" content="./cover.png" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#play-button">Skip to game</a>
+    <header class="site-header">
+      <div class="brand">
+        <img src="./favicon.svg" width="36" height="36" alt="" /><span
+          >pepe<span class="brand-two">2</span>pepe<span class="arcade-label"
+            >arcade</span
+          ></span
+        >
+      </div>
+      <span class="header-note"
+        ><span class="status-dot"></span> Small games. Big frog energy.</span
+      >
+      <span class="mobile-note">One more hop.</span>
+    </header>
+    <main>
+      <div class="page-heading">
+        <div>
+          <h1>
+            PEPE <span>Ladder</span
+            ><span class="title-spark" aria-hidden="true">✦</span>
+          </h1>
+          <p>A little frog. A very big gamble.</p>
+        </div>
+        <span class="game-tag"
+          ><span class="status-dot"></span> Endless climb<span class="tag-dot"
+            >·</span
+          >75-second runs</span
+        >
+      </div>
+      <div class="game-layout">
+        <section class="game-shell" aria-label="PEPE Ladder game">
+          <div class="scoreboard" role="group" aria-label="Live game stats">
+            <div class="stat">
+              <span class="stat-label"
+                ><span class="stat-icon" aria-hidden="true">◇</span> Banked
+                score</span
+              ><strong id="score">0</strong>
+            </div>
+            <div class="stat pot-stat">
+              <span class="stat-label"
+                ><span aria-hidden="true">◉</span> Current pot</span
+              ><strong id="pot">0</strong>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Multiplier</span
+              ><strong class="combo-value" id="multiplier">×1</strong>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Height</span
+              ><strong><span id="height">0</span><small> m</small></strong>
+            </div>
+          </div>
+          <div class="pond-wrap" id="pond-wrap">
+            <canvas
+              id="pond"
+              role="img"
+              tabindex="0"
+              aria-label="Moonlit lily-pad ladder. Left or right arrows to aim, Space to hop. B to bank, P to pause."
+              aria-describedby="keyboard-instructions"
+              >Your browser needs Canvas to play PEPE Ladder.</canvas
+            >
+            <div class="pond-top">
+              <span class="pond-label"
+                ><span class="status-dot"></span
+                ><span id="zone-label">The quiet pond</span></span
+              >
+              <div class="pond-tools">
+                <span
+                  class="timer"
+                  id="timer"
+                  role="timer"
+                  aria-live="off"
+                  aria-label="75 seconds remaining"
+                  >1:15</span
+                ><button
+                  class="icon-button"
+                  id="sound-button"
+                  aria-label="Sound"
+                  aria-pressed="false"
+                  title="Toggle sound"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+                    <path id="sound-waves" d="m16 9 5 6m0-6-5 6" />
+                  </svg></button
+                ><button
+                  class="icon-button"
+                  id="pause-button"
+                  aria-label="Pause game"
+                  title="Pause (P)"
+                  disabled
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 6v12M16 6v12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="intro" id="intro">
+              <span class="intro-chip">Risk a little. Ribbit a lot.</span>
+              <h2>One more pad?</h2>
+              <p>Hop higher. Grow your pot.<br />Bank it before you sink.</p>
+              <button class="primary-button" id="play-button">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 5 11 7-11 7Z" /></svg
+                >Hop in<span class="button-key">Space</span></button
+              ><span class="intro-hint"
+                >Free to play. Just bring your nerve.</span
+              >
+            </div>
+            <div class="play-status" id="play-status" hidden>
+              <span id="pad-status">Choose a direction, then hop</span>
+              <div class="pad-timer"><span id="pad-life"></span></div>
+            </div>
+            <div class="pond-toast" id="pond-toast" role="status"></div>
+            <div
+              class="overlay"
+              id="pause-overlay"
+              hidden
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="pause-title"
+            >
+              <div class="overlay-card">
+                <span class="overlay-symbol" aria-hidden="true">☾</span>
+                <h2 id="pause-title">Pond on pause.</h2>
+                <p>Your coins can catch their breath.</p>
+                <button class="primary-button" id="resume-button">
+                  Keep climbing<kbd>P</kbd></button
+                ><button class="text-button" id="pause-restart">
+                  Restart run
+                </button>
+              </div>
+            </div>
+            <div
+              class="overlay"
+              id="over-overlay"
+              hidden
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="over-title"
+            >
+              <div class="overlay-card result-card">
+                <img class="result-frog" src="./frog.svg" alt="" />
+                <h2 id="over-title">So close. So pond.</h2>
+                <p id="loss-message">The pond keeps the pot.</p>
+                <div class="result-score">
+                  <span>Banked score</span><strong id="final-score">0</strong
+                  ><span class="new-best" id="new-best" hidden
+                    >New personal best!</span
+                  >
+                </div>
+                <div class="result-records">
+                  <div>
+                    <span>Best score</span><strong id="result-best">0</strong>
+                  </div>
+                  <div>
+                    <span>Best height</span
+                    ><strong id="result-height">0 m</strong>
+                  </div>
+                  <div>
+                    <span>Daily streak</span
+                    ><strong id="result-streak">1 day</strong>
+                  </div>
+                </div>
+                <button class="primary-button" id="restart-button">
+                  One more run<svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 10a8 8 0 1 1 2 8M4 4v6h6" />
+                  </svg></button
+                ><span class="result-detail" id="run-detail"></span>
+              </div>
+            </div>
+          </div>
+          <div class="game-controls" id="game-controls">
+            <button
+              class="hop-button"
+              id="hop-left"
+              aria-label="Hop left"
+              disabled
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m13 5-7 7 7 7M6 12h14" /></svg
+              ><span>Hop left</span></button
+            ><button class="bank-button" id="bank-button" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 7h12l2 13H4L6 7ZM8 4h8v3H8ZM9 12h6m-3-3v8" /></svg
+              ><span
+                ><strong>BANK<span id="bank-amount"></span></strong
+                ><small id="bank-hint">Keep what you collect</small></span
+              ><kbd>B</kbd></button
+            ><button
+              class="hop-button"
+              id="hop-right"
+              aria-label="Hop right"
+              disabled
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m11 5 7 7-7 7M18 12H4" /></svg
+              ><span>Hop right</span>
+            </button>
+          </div>
+          <div class="keyboard-instructions" id="keyboard-instructions">
+            <span><kbd>←</kbd><kbd>→</kbd> or <kbd>A</kbd><kbd>D</kbd> aim</span
+            ><span><kbd>Space</kbd> / <kbd>W</kbd> hop</span
+            ><span><kbd>B</kbd> / <kbd>Enter</kbd> bank</span
+            ><span><kbd>P</kbd> pause</span>
+          </div>
+          <p class="touch-instructions">
+            Tap either side of the pond to hop. Tap BANK to keep your coins.
+          </p>
+        </section>
+        <aside class="sidebar" aria-label="How to play and personal records">
+          <section class="how-card">
+            <div class="section-title">
+              <span class="little-orbit" aria-hidden="true">↗</span>
+              <h2>A leap of faith.</h2>
+            </div>
+            <ol class="how-list">
+              <li>
+                <span class="step-number">1</span>
+                <div>
+                  <h3>Hop a little higher</h3>
+                  <p>Choose left or right. Every new pad fills your pot.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">2</span>
+                <div>
+                  <h3>Let it multiply</h3>
+                  <p>
+                    Keep climbing for bigger combos. How far will you push it?
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number gold-step">3</span>
+                <div>
+                  <h3>Bank before you sink</h3>
+                  <p>
+                    BANK saves your pot and resets your combo. A fall or moonset
+                    takes the rest.
+                  </p>
+                </div>
+              </li>
+            </ol>
+            <div class="combo-track" role="group" aria-label="Combo milestones">
+              <span>×1</span><i></i><span>×2</span><i></i><span>×3</span><i></i
+              ><span>×5</span><i></i><span class="combo-last">×10</span>
+            </div>
+            <p class="combo-caption">A bigger combo. A bigger decision.</p>
+          </section>
+          <section class="pond-guide">
+            <h2>Know your lily pads</h2>
+            <div class="pad-guide-row">
+              <span class="mini-pad drift-pad" aria-hidden="true">↔</span>
+              <div>
+                <strong>The drifter</strong
+                ><span>Moves sideways. Time your hop.</span>
+              </div>
+            </div>
+            <div class="pad-guide-row">
+              <span class="mini-pad sink-pad" aria-hidden="true">↓</span>
+              <div>
+                <strong>The sinker</strong
+                ><span>Hop again before it goes under.</span>
+              </div>
+            </div>
+            <div class="pad-guide-row">
+              <span class="mini-pad crumble-pad" aria-hidden="true">ϟ</span>
+              <div>
+                <strong>The crumbler</strong
+                ><span>One touch. Less than a second.</span>
+              </div>
+            </div>
+            <div class="fly-tip">
+              <span class="fly-symbol" aria-hidden="true">✦</span>
+              <p>
+                <strong>Spot a golden fly?</strong><br />Catch it to double your
+                pot.
+              </p>
+            </div>
+          </section>
+          <section class="records-card">
+            <h2>
+              Your pond records<svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8 3h8v6a4 4 0 0 1-8 0V3ZM8 5H4v3a4 4 0 0 0 5 4m7-7h4v3a4 4 0 0 1-5 4m-3 1v6m-4 0h8"
+                />
+              </svg>
+            </h2>
+            <div class="record-row">
+              <span>Best score</span><strong id="best-score">—</strong>
+            </div>
+            <div class="record-row">
+              <span>Best height</span><strong id="best-height">—</strong>
+            </div>
+            <div class="record-row">
+              <span><span aria-hidden="true">☀</span> Daily streak</span
+              ><strong id="daily-streak">0 days</strong>
+            </div>
+            <p class="streak-note" id="streak-note">
+              Play today. Start your streak.
+            </p>
+            <p class="storage-note" id="storage-note">Saved on this browser.</p>
+          </section>
+        </aside>
+      </div>
+      <footer>
+        <span>Made for the <strong>one-more-try</strong> kind of people.</span
+        ><span
+          >All the thrill. Just pretend coins.<span
+            class="footer-frog"
+            aria-hidden="true"
+            >✦</span
+          ></span
+        >
+      </footer>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

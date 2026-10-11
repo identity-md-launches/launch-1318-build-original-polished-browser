@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "pepe-browser-game/1",
+  "title": "PEPE Ladder",
+  "version": "1.0.0",
+  "summary": "One more pad? Climb a moonlit pond, grow your coin pot, and bank before you sink.",
+  "description": "An original single-player risk-and-reward climbing game. Hop across drifting, sinking and crumbling lily pads. Build a combo, catch rare golden flies to double your pot, and BANK to keep your coins. A fall or the 75-second moonset loses unbanked coins. Chase your best score and height, and return for a daily streak bonus. Records stay on this browser when storage is available, or in the current session in the arcade sandbox.",
+  "controls": "Desktop: Left/Right or A/D to aim, Space or W to hop, B or Enter to bank. P or Escape pauses. Mobile: tap the left or right side of the pond, or the arrow buttons, to hop that way; use the gold BANK button. One tap restarts after a run. Sound is optional and starts only after a gesture.",
+  "genre": "arcade",
+  "players": 1,
+  "mobile": true,
+  "entry": "index.html",
+  "cover": "cover.png"
+}

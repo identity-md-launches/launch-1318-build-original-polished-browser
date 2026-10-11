@@ -1,0 +1,68 @@
+{
+  "budgetBytes": 8388608,
+  "portableFileCount": 47,
+  "portableBytesExcludingThisAudit": 2424688,
+  "portableTarGzipBytesExcludingThisAudit": 2151924,
+  "allDeliverableBytesIncludingSeparateArtifactsExcludingThisAudit": 5738860,
+  "distBytes": 391735,
+  "note": "Portable set excludes supplied input/metadata directories and the seat-excluded artifacts directory. It includes source, lockfile, export, docs and five screenshots. This is a conservative file-size and tar-gzip audit, not a claim to have written Git metadata or created the final network Git bundle.",
+  "coverDimensions": [
+    1200,
+    630
+  ],
+  "manifestValidated": true,
+  "relativeClassicBundle": true,
+  "forbiddenDependencyCacheArchivePaths": [],
+  "runtime": [
+    {
+      "path": "dist/assets/index-jsZhfT-o.js",
+      "bytes": 100614,
+      "sha256": "c9f5892bb8f50d8299dfe7a254c8f03730bdcea0cd3e1e5c58264c740b6b7a21"
+    },
+    {
+      "path": "dist/cover.png",
+      "bytes": 260648,
+      "sha256": "e1bdab08ab29786f05d7d8534a49c8d458222a79f116897a268dbc0e4ea85f5a"
+    },
+    {
+      "path": "dist/favicon.svg",
+      "bytes": 666,
+      "sha256": "0dcf4fad89a481523ef9b85a8d48c2eb5043f752106992e81e2d34c796dd43cf"
+    },
+    {
+      "path": "dist/fonts/lilita-one-LICENSE.txt",
+      "bytes": 4392,
+      "sha256": "255d5debbb80eb2ea762644311f266a279e8778f00156655a516e2b7781a63e1"
+    },
+    {
+      "path": "dist/fonts/nunito-sans-LICENSE.txt",
+      "bytes": 4393,
+      "sha256": "efbb0c9e864cef973982d9a17567e6be5c3d1759695574586f3f18c7ecca064b"
+    },
+    {
+      "path": "dist/frog-grin.svg",
+      "bytes": 2097,
+      "sha256": "708801947938d8e248e6dcf887991b92dfd2b0f331f63b87d002e1ad16721b20"
+    },
+    {
+      "path": "dist/frog-panic.svg",
+      "bytes": 2096,
+      "sha256": "cc97db73978742c21ca89c43b206b2db27fb5b1440932f585da8d27f369715b5"
+    },
+    {
+      "path": "dist/frog.svg",
+      "bytes": 2078,
+      "sha256": "816061a4c5e2b8564a150f7a87f247592ef36f670cba48b2cdf15432430833f1"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 13702,
+      "sha256": "6ed9e4fd493f3c363973ab52d913f4d0420fb9d63b2071080c9b4b02e72196a0"
+    },
+    {
+      "path": "dist/pepe-game.json",
+      "bytes": 1049,
+      "sha256": "8d070bbdb8d18cbbdf426e68202dcd70fc9e7b97066b70e495ffc056847e569c"
+    }
+  ]
+}

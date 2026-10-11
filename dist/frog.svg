@@ -1,0 +1,69 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="180"
+  height="156"
+  viewBox="0 0 180 156"
+>
+  <defs>
+    <linearGradient id="skin" x2="0.1" y2="1">
+      <stop stop-color="#b7e873" />
+      <stop offset="1" stop-color="#5dba75" />
+    </linearGradient>
+    <linearGradient id="shirt" x2="0" y2="1">
+      <stop stop-color="#65a6ba" />
+      <stop offset="1" stop-color="#327186" />
+    </linearGradient>
+  </defs>
+  <g stroke="#193f38" stroke-width="4" stroke-linejoin="round">
+    <path
+      d="M59 107Q33 99 24 121Q21 132 39 134L56 130M119 108Q145 98 155 121Q162 135 139 135L122 129"
+      fill="#70c67c"
+    />
+    <path d="M53 100Q91 83 128 102L131 134Q91 146 50 133Z" fill="url(#shirt)" />
+    <path
+      d="M61 131Q53 123 39 128L21 139Q19 146 32 148L65 146Q77 139 61 131M117 131Q128 124 142 131L159 142Q159 150 142 150L115 146Q105 138 117 131"
+      fill="#7dcc7b"
+    />
+    <path
+      d="M48 114Q36 104 40 86Q24 77 31 62Q35 52 43 46Q35 14 59 10Q82 6 91 27Q110 5 131 13Q151 24 139 48Q156 57 157 76Q161 92 144 101Q131 120 92 123Q63 124 48 114Z"
+      fill="url(#skin)"
+    />
+    <path d="M45 44Q46 15 65 18Q83 19 85 44Z" fill="#fff3ce" />
+    <path d="M96 43Q103 16 121 20Q137 24 133 45Z" fill="#fff3ce" />
+    <path d="M58 29Q65 23 72 29L72 45L59 44Z" fill="#173a35" stroke="none" />
+    <path
+      d="M110 30Q117 25 123 31L122 45L109 44Z"
+      fill="#173a35"
+      stroke="none"
+    />
+    <path
+      d="M42 43Q64 35 86 44M96 43Q114 37 137 46"
+      fill="none"
+      stroke="#408d58"
+      stroke-width="6"
+    />
+    <path
+      d="M48 77Q66 70 86 78Q112 65 140 76Q146 81 139 88Q118 98 84 93Q60 100 47 88Q42 83 48 77Z"
+      fill="#bd7959"
+    />
+    <path
+      d="M49 82Q69 88 87 84Q111 84 137 81"
+      fill="none"
+      stroke="#623e34"
+      stroke-width="3"
+    />
+    <path
+      d="M55 101Q75 111 99 107"
+      fill="none"
+      stroke="#c6ed88"
+      stroke-width="5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M47 62L50 62M137 61L140 61"
+      stroke="#358852"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>

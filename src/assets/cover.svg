@@ -1,0 +1,240 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">PEPE Ladder — One more pad?</title>
+  <desc id="desc">
+    An original green cartoon frog hops between lily pads in a magical night
+    pond, carrying a golden coin pot under a full moon.
+  </desc>
+  <defs>
+    <linearGradient id="night" x2="0.3" y2="1">
+      <stop stop-color="#102c2c" />
+      <stop offset="1" stop-color="#327b66" />
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#f5da7d" stop-opacity=".3" />
+      <stop offset="1" stop-color="#f5da7d" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="0" fill="url(#night)" />
+  <circle cx="984" cy="142" r="150" fill="url(#halo)" />
+  <circle cx="984" cy="142" r="69" fill="#f3d77e" />
+  <circle cx="969" cy="129" r="49" fill="#f7e294" />
+  <circle cx="1011" cy="161" r="11" fill="#ddbf66" />
+  <path
+    d="M0 380Q100 260 254 358T588 355T886 342T1200 295V630H0Z"
+    fill="#204f43"
+  />
+  <path d="M0 487Q180 362 368 482T707 438T1200 449V630H0Z" fill="#2b6952" />
+  <g fill="#c6e6a0" opacity=".7">
+    <circle cx="95" cy="132" r="2" />
+    <circle cx="641" cy="98" r="2" />
+    <circle cx="753" cy="199" r="3" />
+    <circle cx="1105" cy="78" r="2" />
+    <circle cx="669" cy="388" r="3" />
+    <circle cx="554" cy="516" r="2" />
+    <circle cx="1087" cy="398" r="3" />
+    <circle cx="702" cy="522" r="2" />
+    <circle cx="1010" cy="470" r="2" />
+    <circle cx="576" cy="246" r="2" />
+  </g>
+  <g fill="none" stroke="#89b990" opacity=".3" stroke-width="2">
+    <ellipse cx="844" cy="548" rx="110" ry="15" />
+    <ellipse cx="1003" cy="368" rx="94" ry="12" />
+    <ellipse cx="728" cy="242" rx="79" ry="9" />
+    <path d="M942 282h56m-30 23h60m-600 231h95m624-55h41" />
+  </g>
+  <g stroke-width="3">
+    <ellipse cx="839" cy="532" rx="97" ry="25" fill="#518b4d" />
+    <path
+      d="M936 524A97 24 0 1 1 935 516L882 520Z"
+      fill="#a0cf79"
+      stroke="#c7e494"
+    />
+    <path d="M869 520 780 509m92 13-98 10" stroke="#669d58" />
+    <ellipse cx="1000" cy="352" rx="74" ry="19" fill="#487f4b" />
+    <path
+      d="M1074 345A74 19 0 1 1 1073 339L1034 342Z"
+      fill="#92c574"
+      stroke="#c2dc91"
+    />
+    <path
+      d="m973 340 50 0m-41-8-9 8 9 8m32-16 9 8-9 8"
+      fill="none"
+      stroke="#42794c"
+    />
+    <ellipse cx="727" cy="230" rx="60" ry="16" fill="#477d68" />
+    <path
+      d="M787 224A60 16 0 1 1 786 219L755 222Z"
+      fill="#91c6b1"
+      stroke="#bddfc2"
+    />
+  </g>
+  <g transform="translate(711 302) scale(1.45)">
+    <defs>
+      <linearGradient id="skin" x2="0.1" y2="1">
+        <stop stop-color="#b7e873" />
+        <stop offset="1" stop-color="#5dba75" />
+      </linearGradient>
+      <linearGradient id="shirt" x2="0" y2="1">
+        <stop stop-color="#65a6ba" />
+        <stop offset="1" stop-color="#327186" />
+      </linearGradient>
+    </defs>
+    <g stroke="#193f38" stroke-width="4" stroke-linejoin="round">
+      <path
+        d="M59 107Q33 99 24 121Q21 132 39 134L56 130M119 108Q145 98 155 121Q162 135 139 135L122 129"
+        fill="#70c67c"
+      />
+      <path
+        d="M53 100Q91 83 128 102L131 134Q91 146 50 133Z"
+        fill="url(#shirt)"
+      />
+      <path
+        d="M61 131Q53 123 39 128L21 139Q19 146 32 148L65 146Q77 139 61 131M117 131Q128 124 142 131L159 142Q159 150 142 150L115 146Q105 138 117 131"
+        fill="#7dcc7b"
+      />
+      <path
+        d="M48 114Q36 104 40 86Q24 77 31 62Q35 52 43 46Q35 14 59 10Q82 6 91 27Q110 5 131 13Q151 24 139 48Q156 57 157 76Q161 92 144 101Q131 120 92 123Q63 124 48 114Z"
+        fill="url(#skin)"
+      />
+      <path d="M45 44Q46 15 65 18Q83 19 85 44Z" fill="#fff3ce" />
+      <path d="M96 43Q103 16 121 20Q137 24 133 45Z" fill="#fff3ce" />
+      <path d="M58 29Q65 23 72 29L72 45L59 44Z" fill="#173a35" stroke="none" />
+      <path
+        d="M110 30Q117 25 123 31L122 45L109 44Z"
+        fill="#173a35"
+        stroke="none"
+      />
+      <path
+        d="M42 43Q64 35 86 44M96 43Q114 37 137 46"
+        fill="none"
+        stroke="#408d58"
+        stroke-width="6"
+      />
+      <path
+        d="M48 77Q66 70 86 78Q112 65 140 76Q146 81 139 88Q118 98 84 93Q60 100 47 88Q42 83 48 77Z"
+        fill="#bd7959"
+      />
+      <path
+        d="M49 82Q69 88 87 84Q111 84 137 81"
+        fill="none"
+        stroke="#623e34"
+        stroke-width="3"
+      />
+      <path
+        d="M55 101Q75 111 99 107"
+        fill="none"
+        stroke="#c6ed88"
+        stroke-width="5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M47 62L50 62M137 61L140 61"
+        stroke="#358852"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+    </g>
+  </g>
+  <g transform="translate(832 280)">
+    <circle r="71" fill="url(#halo)" />
+    <rect
+      x="-27"
+      y="-21"
+      width="54"
+      height="54"
+      rx="17"
+      fill="#d8a640"
+      stroke="#ffe199"
+      stroke-width="3"
+    />
+    <rect
+      x="-24"
+      y="-33"
+      width="48"
+      height="14"
+      rx="4"
+      fill="#ecc85e"
+      stroke="#ffe4a5"
+      stroke-width="3"
+    />
+    <path
+      d="M-14-12v19"
+      stroke="#ffedb4"
+      stroke-width="4"
+      stroke-linecap="round"
+    />
+    <text
+      x="1"
+      y="18"
+      text-anchor="middle"
+      font-family="sans-serif"
+      font-size="34"
+      font-weight="900"
+      fill="#7f6229"
+    >
+      ₽
+    </text>
+  </g>
+  <g fill="#f4d273" stroke="#ffebad" stroke-width="2">
+    <ellipse cx="924" cy="266" rx="8" ry="11" transform="rotate(25 924 266)" />
+    <ellipse cx="952" cy="232" rx="7" ry="10" transform="rotate(25 952 232)" />
+    <ellipse cx="931" cy="198" rx="5" ry="8" transform="rotate(-15 931 198)" />
+  </g>
+  <g font-family="Nunito, Arial, Helvetica, sans-serif">
+    <text x="78" y="98" fill="#d4e4c3" font-size="24" font-weight="700">
+      pepe2pepe
+      <tspan font-weight="400" fill="#afc5ac">/ arcade</tspan>
+    </text>
+    <text
+      x="73"
+      y="252"
+      fill="#f7f2d6"
+      font-family="Lilita, Arial, sans-serif"
+      font-size="122"
+      font-weight="400"
+      letter-spacing="0"
+    >
+      PEPE
+    </text>
+    <text
+      x="72"
+      y="357"
+      fill="#b6e28b"
+      font-family="Lilita, Arial, sans-serif"
+      font-size="118"
+      font-weight="400"
+      letter-spacing="0"
+    >
+      LADDER
+    </text>
+    <text x="80" y="421" fill="#d5e4c9" font-size="26">
+      A little frog. A very big gamble.
+    </text>
+    <rect x="79" y="468" width="253" height="61" rx="16" fill="#f4cc64" />
+    <text
+      x="205"
+      y="506"
+      text-anchor="middle"
+      font-size="23"
+      font-weight="800"
+      fill="#283122"
+    >
+      One more pad?
+    </text>
+    <text x="80" y="579" font-size="17" fill="#bfd5b7">
+      HOP HIGHER. BANK BEFORE YOU SINK.
+    </text>
+  </g>
+  <g fill="#173e31">
+    <path
+      d="M0 630V543Q25 568 35 630Q25 523 54 496Q52 570 68 630Q66 556 76 545L68 630ZM1200 630V505Q1175 550 1176 630Q1163 519 1129 508Q1153 574 1153 630Q1119 560 1084 573L1130 630Z"
+    />
+  </g>
+</svg>

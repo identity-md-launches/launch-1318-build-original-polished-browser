@@ -1,0 +1,24 @@
+{
+  "name": "pepe-ladder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --configLoader native",
+    "build": "vite build --configLoader native",
+    "preview": "vite preview --host 0.0.0.0 --configLoader native",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:browser": "node tests/browser.mjs",
+    "cover": "node scripts/render-cover.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
+    "@playwright/test": "1.56.1",
+    "typescript": "5.9.3",
+    "vite": "7.1.9"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}

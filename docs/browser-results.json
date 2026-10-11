@@ -1,0 +1,881 @@
+{
+  "browser": "141.0.7390.37",
+  "checks": [
+    {
+      "name": "metadata, local fonts, cover and manifest",
+      "result": "pass"
+    },
+    {
+      "name": "desktop initial accessibility scan",
+      "result": "pass"
+    },
+    {
+      "name": "desktop and narrow initial layouts",
+      "result": "pass"
+    },
+    {
+      "name": "no audio before a user gesture",
+      "result": "pass"
+    },
+    {
+      "name": "keyboard-only entry and visible focus",
+      "result": "pass"
+    },
+    {
+      "name": "arrow keys, Space and banking with B",
+      "result": "pass"
+    },
+    {
+      "name": "A/D and W, combo growth, Enter banks in midair",
+      "result": "pass"
+    },
+    {
+      "name": "audio starts only after toggle gesture and creates procedural notes",
+      "result": "pass"
+    },
+    {
+      "name": "mute suspends audio and a new gesture resumes the same context",
+      "result": "pass"
+    },
+    {
+      "name": "P pause freezes timer and gameplay, traps focus, Escape resumes",
+      "result": "pass"
+    },
+    {
+      "name": "short desktop and landscape gameplay keeps BANK visible",
+      "result": "pass"
+    },
+    {
+      "name": "fall, near-miss, best records and one-tap restart",
+      "result": "pass"
+    },
+    {
+      "name": "visibility loss pauses and never auto-resumes",
+      "result": "pass"
+    },
+    {
+      "name": "sound preference and records survive reload, without daily streak inflation",
+      "result": "pass"
+    },
+    {
+      "name": "measured opaque UI contrast pairs",
+      "result": "pass"
+    },
+    {
+      "name": "a high combo grows the pot and activates the heartbeat",
+      "result": "pass"
+    },
+    {
+      "name": "200% text enlargement reflow",
+      "result": "pass"
+    },
+    {
+      "name": "390-pixel first screen contains product and primary action",
+      "result": "pass"
+    },
+    {
+      "name": "touch left pond, right control, and BANK",
+      "result": "pass"
+    },
+    {
+      "name": "touch pause/resume and short viewport controls remain reachable",
+      "result": "pass"
+    },
+    {
+      "name": "touch game over and one-tap restart",
+      "result": "pass"
+    },
+    {
+      "name": "reduced-motion removes button scaling and retains functional controls",
+      "result": "pass"
+    },
+    {
+      "name": "sandbox without same-origin storage renders local fonts and plays",
+      "result": "pass"
+    },
+    {
+      "name": "bridge validates source, protocol and channel; init replies ready",
+      "result": "pass"
+    },
+    {
+      "name": "bridge sends a finite integer game-over score only on the negotiated channel",
+      "result": "pass"
+    },
+    {
+      "name": "no JavaScript errors, console errors or failed resource requests",
+      "result": "pass"
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "accessibility": [
+    {
+      "state": "desktop ready",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".brand > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".brand-two"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".arcade-label"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".header-note"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1 > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".title-spark"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".page-heading > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".game-tag"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".tag-dot"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".stat-icon"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".pot-stat > .stat-label > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#zone-label"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#timer"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".intro-chip"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#intro > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#intro > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".intro-hint"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > kbd:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > kbd:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".pond-guide > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(2) > div > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(2) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".sink-pad"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(3) > div > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(3) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".crumble-pad"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(4) > div > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(4) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".fly-symbol"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".fly-tip > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "p > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".footer-frog"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "desktop paused",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".overlay-symbol"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#pause-title"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#pause-overlay > .overlay-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#pause-restart"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "desktop game over",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#over-title"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#loss-message"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".result-score > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#final-score"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#new-best"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".result-records > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#result-best"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".result-records > div:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#result-height"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".result-records > div:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#result-streak"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#run-detail"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "mobile ready",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".brand > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".brand-two"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".arcade-label"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".mobile-note"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1 > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".title-spark"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".page-heading > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pot-stat > .stat-label > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#zone-label"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#timer"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".intro-chip"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#intro > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#intro > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".intro-hint"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".pond-guide > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(2) > div > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(2) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".sink-pad"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(3) > div > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(3) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".crumble-pad"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(4) > div > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".pad-guide-row:nth-child(4) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".fly-symbol"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".fly-tip > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "p > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".footer-frog"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 1080,
+      "state": "ready",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "viewportHeight": 1080,
+      "startVisible": true,
+      "bankBottom": 961.796875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "state": "ready",
+      "scrollWidth": 1024,
+      "viewportWidth": 1024,
+      "viewportHeight": 900,
+      "startVisible": true,
+      "bankBottom": 904.796875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "state": "ready",
+      "scrollWidth": 820,
+      "viewportWidth": 820,
+      "viewportHeight": 1000,
+      "startVisible": true,
+      "bankBottom": 893.796875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "ready",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "startVisible": true,
+      "bankBottom": 791.1875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "state": "ready",
+      "scrollWidth": 320,
+      "viewportWidth": 320,
+      "viewportHeight": 740,
+      "startVisible": true,
+      "bankBottom": 721.1875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "state": "playing",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "startVisible": false,
+      "bankBottom": 817.1875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "state": "playing",
+      "scrollWidth": 1024,
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "startVisible": false,
+      "bankBottom": 678.1875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "playing",
+      "scrollWidth": 844,
+      "viewportWidth": 844,
+      "viewportHeight": 390,
+      "startVisible": false,
+      "bankBottom": 364,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "ready",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "startVisible": true,
+      "bankBottom": 791.1875,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "playing",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "startVisible": false,
+      "bankBottom": 788,
+      "loadedFonts": [
+        true,
+        true
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "state": "playing",
+      "scrollWidth": 320,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "startVisible": false,
+      "bankBottom": 512,
+      "loadedFonts": [
+        true,
+        false
+      ]
+    },
+    {
+      "width": 540,
+      "height": 720,
+      "state": "playing",
+      "scrollWidth": 540,
+      "viewportWidth": 540,
+      "viewportHeight": 720,
+      "startVisible": false,
+      "bankBottom": 664,
+      "loadedFonts": [
+        true,
+        false
+      ]
+    }
+  ],
+  "audio": {
+    "created": 1,
+    "resumed": 1,
+    "oscillators": 1,
+    "heartbeatNotes": 14,
+    "state": "running",
+    "highPot": 18450
+  },
+  "bridge": {
+    "storageDenied": true,
+    "messages": [
+      {
+        "protocol": "pepe-game/1",
+        "type": "ready",
+        "channel": "test-channel"
+      },
+      {
+        "protocol": "pepe-game/1",
+        "type": "score",
+        "channel": "test-channel",
+        "score": 125
+      }
+    ]
+  },
+  "contrast": [
+    {
+      "name": "body text",
+      "foreground": "rgb(243, 243, 220)",
+      "background": "rgb(25, 49, 43)",
+      "ratio": 12.32
+    },
+    {
+      "name": "secondary text",
+      "foreground": "rgb(173, 189, 173)",
+      "background": "rgb(25, 49, 43)",
+      "ratio": 7.03
+    },
+    {
+      "name": "score value",
+      "foreground": "rgb(243, 243, 220)",
+      "background": "rgb(28, 50, 43)",
+      "ratio": 12.12
+    },
+    {
+      "name": "gold pot",
+      "foreground": "rgb(244, 204, 100)",
+      "background": "rgb(28, 50, 43)",
+      "ratio": 8.87
+    },
+    {
+      "name": "primary action",
+      "foreground": "rgb(40, 49, 34)",
+      "background": "rgb(245, 205, 102)",
+      "ratio": 8.89
+    }
+  ]
+}
