@@ -25,6 +25,8 @@ const evidence = {
   bridge: {},
   contrast: [],
   resultLayouts: [],
+  pauseLayouts: [],
+  readyInput: [],
 };
 const mime = {
   ".html": "text/html",
@@ -35,7 +37,7 @@ const mime = {
   ".woff2": "font/woff2",
   ".json": "application/json",
 };
-const hostHtml = `<!doctype html><html lang="en"><title>Opaque iframe test host</title><body style="margin:0"><iframe title="PEPE Ladder" id="game" sandbox="allow-scripts allow-pointer-lock" src="/preview/index.html" style="width:100vw;height:100vh;border:0"></iframe><script>window.messages=[];addEventListener('message',e=>{if(e.source===document.querySelector('iframe').contentWindow)messages.push(e.data)});window.send=(message)=>document.querySelector('iframe').contentWindow.postMessage(message,'*');</script></body></html>`;
+const hostHtml = `<!doctype html><html lang="en"><title>Opaque iframe test host</title><link rel="icon" href="/preview/favicon.svg"><body style="margin:0"><iframe title="PEPE Ladder" id="game" sandbox="allow-scripts allow-pointer-lock" src="/preview/index.html" style="width:100vw;height:100vh;border:0"></iframe><script>window.messages=[];addEventListener('message',e=>{if(e.source===document.querySelector('iframe').contentWindow)messages.push(e.data)});window.send=(message)=>document.querySelector('iframe').contentWindow.postMessage(message,'*');</script></body></html>`;
 const server = createServer(async (req, res) => {
   try {
     const url = new URL(req.url, "http://localhost");
@@ -117,6 +119,31 @@ async function scan(page, state) {
     })),
   });
   assert.equal(violations.length, 0, JSON.stringify(violations, null, 2));
+}
+async function modalPaintOrder(page, selector) {
+  const samples = await page.evaluate((selector) => {
+    const controls = document.querySelector("#game-controls"),
+      wasInert = controls.inert;
+    // Inert hides underlying controls from hit testing, even if they paint above
+    // a dialog. Make them hit-testable for this synchronous probe, then restore.
+    controls.inert = false;
+    try {
+      return [...document.querySelectorAll(`${selector} button`)].map((button) => {
+        const b = button.getBoundingClientRect();
+        const hits = [0.2, 0.5, 0.8].flatMap((x) =>
+          [0.2, 0.5, 0.8].map((y) =>
+            button.contains(document.elementFromPoint(b.x + b.width * x, b.y + b.height * y)),
+          ),
+        );
+        return { button: button.id, hits };
+      });
+    } finally {
+      controls.inert = wasInert;
+    }
+  }, selector);
+  for (const sample of samples)
+    assert.ok(sample.hits.every(Boolean), `${sample.button} paints behind a background control: ${JSON.stringify(samples)}`);
+  return samples;
 }
 async function layout(page, width, height, state) {
   await page.setViewportSize({ width, height });
@@ -590,12 +617,29 @@ try {
     [540, 650],
     [390, 844],
     [1440, 900],
+    [1366, 657],
+    [1280, 720],
+    [1366, 768],
+    [1024, 768],
+    [1440, 790],
+    [844, 390],
+    [667, 375],
+    [960, 540],
+    [1024, 600],
+    [1280, 800],
+    [1440, 801],
+    [1440, 848],
+    [1440, 850],
+    [1440, 851],
+    [541, 650],
+    [1920, 1080],
   ]) {
     await check(`game-over content and one-tap restart at ${width}×${height}`, async () => {
+      const touch = width <= 540 || (width <= 900 && height < 500);
       const context = await browser.newContext({
         viewport: { width, height },
-        isMobile: width <= 540,
-        hasTouch: width <= 540,
+        isMobile: touch,
+        hasTouch: touch,
       });
       try {
         const resultPage = await context.newPage();
@@ -604,10 +648,47 @@ try {
         await resultPage.evaluate(() => document.fonts.ready);
         await resultPage.clock.install();
         const activate = async (id) => {
-          if (width <= 540) await resultPage.locator(id).tap();
+          if (touch) await resultPage.locator(id).tap();
           else await resultPage.locator(id).click();
         };
+        const activateAtCenter = async (id) => {
+          // Raw coordinates cannot auto-scroll a clipped action into view.
+          const box = await resultPage.locator(id).boundingBox();
+          assert.ok(box);
+          const x = box.x + box.width / 2, y = box.y + box.height / 2;
+          if (touch) await resultPage.touchscreen.tap(x, y);
+          else await resultPage.mouse.click(x, y);
+        };
         await activate("#play-button");
+        const bankBox = await resultPage.locator("#bank-button").boundingBox();
+        assert.ok(bankBox.y >= 0 && bankBox.y + bankBox.height <= height);
+        await activate("#pause-button");
+        await expect(resultPage.locator("#resume-button")).toBeFocused();
+        const pauseMetrics = await resultPage.evaluate(() => {
+          const card = document.querySelector("#pause-overlay .overlay-card"), rect = card.getBoundingClientRect();
+          return {
+            clientHeight: card.clientHeight, scrollHeight: card.scrollHeight, scrollTop: card.scrollTop,
+            content: ["#pause-title", "#resume-button", "#pause-restart"].map(selector => {
+              const el = document.querySelector(selector), b = el.getBoundingClientRect();
+              return {selector, height:b.height, visibleHeight:Math.max(0, Math.min(b.bottom,rect.bottom-1,innerHeight)-Math.max(b.top,rect.top+1,0)), hit:el.contains(document.elementFromPoint(b.x+b.width/2,b.y+b.height/2))};
+            }),
+          };
+        });
+        pauseMetrics.paintOrder = await modalPaintOrder(resultPage, "#pause-overlay");
+        evidence.pauseLayouts.push({width,height,...pauseMetrics});
+        assert.equal(pauseMetrics.scrollTop, 0);
+        assert.equal(pauseMetrics.scrollHeight, pauseMetrics.clientHeight);
+        for (const item of pauseMetrics.content) {
+          assert.ok(item.visibleHeight >= item.height - 0.5, `${item.selector} clipped at ${width}×${height}`);
+          assert.ok(item.hit, `${item.selector} is obscured`);
+        }
+        await resultPage.keyboard.press("Shift+Tab");
+        await expect(resultPage.locator("#pause-restart")).toBeFocused();
+        await resultPage.keyboard.press("Tab");
+        await expect(resultPage.locator("#resume-button")).toBeFocused();
+        await activateAtCenter("#pause-restart");
+        await expect(resultPage.locator("#pause-overlay")).toBeHidden();
+        await expect(resultPage.locator("#pond")).toBeFocused();
         // Exercise both the extra new-best line and the unbanked near-miss copy.
         for (const banked of [true, false]) {
           await activate("#hop-left");
@@ -630,7 +711,7 @@ try {
             const content = ["#over-title", "#loss-message", "#final-score", "#result-best", "#result-height", "#result-streak", "#restart-button", "#run-detail"]
               .map((selector) => {
                 const b = document.querySelector(selector).getBoundingClientRect();
-                return { selector, height: b.height, visibleHeight: Math.max(0, Math.min(b.bottom, rect.bottom - 1, innerHeight) - Math.max(b.top, rect.top + 1, 0)) };
+                return { selector, height: b.height, visibleHeight: Math.max(0, Math.min(b.bottom, rect.bottom - 1, innerHeight) - Math.max(b.top, rect.top + 1, 0)), hit: document.querySelector(selector).contains(document.elementFromPoint(b.x + b.width / 2, b.y + b.height / 2)) };
               });
             return {
               clientHeight: card.clientHeight,
@@ -641,16 +722,19 @@ try {
               content,
             };
           });
+          metrics.paintOrder = await modalPaintOrder(resultPage, "#over-overlay");
           evidence.resultLayouts.push({ width, height, banked, ...metrics });
           assert.equal(metrics.scrollTop, 0);
           assert.equal(metrics.scrollHeight, metrics.clientHeight, "Result card must fit without scrolling");
           assert.equal(metrics.horizontalOverflow, false);
-          assert.equal(metrics.frogVisible, !(width <= 540 && height <= 650));
-          for (const item of metrics.content)
+          assert.equal(metrics.frogVisible, height > 650);
+          for (const item of metrics.content) {
             assert.ok(item.visibleHeight >= item.height - 0.5, `${item.selector} clipped at ${width}×${height}: ${JSON.stringify(item)}`);
-          if (banked && height === 568)
+            assert.ok(item.hit, `${item.selector} is obscured at ${width}×${height}`);
+          }
+          if (banked && (height === 568 || width === 1366 && height === 657 || width === 844 && height === 390))
             await shot(resultPage, `result-${width}-${height}.png`);
-          await activate("#restart-button");
+          await activateAtCenter("#restart-button");
           await expect(resultPage.locator("#over-overlay")).toBeHidden();
           await expect(resultPage.locator("#height")).toHaveText("0");
           await expect(resultPage.locator("#score")).toHaveText("0");
@@ -661,6 +745,37 @@ try {
       }
     });
   }
+  await check("ready-screen pointer Sound preserves Space/Enter start and keyboard activation", async () => {
+    for (const key of ["Space", "Enter"]) {
+      const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+      try {
+        const ready = await context.newPage();
+        watch(ready, `ready Sound ${key}`);
+        await ready.goto(`${base}/preview/index.html`);
+        await ready.clock.install();
+        await ready.locator("#sound-button").click();
+        await expect(ready.locator("#sound-button")).toHaveAttribute("aria-pressed", "true");
+        await expect(ready.locator("#pond")).toBeFocused();
+        await ready.keyboard.press(key);
+        await expect(ready.locator("#intro")).toBeHidden();
+        await expect(ready.locator("#pause-button")).toBeEnabled();
+        await expect(ready.locator("#sound-button")).toHaveAttribute("aria-pressed", "true");
+        await expect(ready.locator("#pond")).toBeFocused();
+        evidence.readyInput.push({key, started:true, soundEnabled:true, focus:"pond"});
+        // On the ready screen, a button reached with Tab must still activate natively.
+        await ready.reload();
+        await ready.locator("#pond").focus();
+        await ready.keyboard.press("Tab");
+        await expect(ready.locator("#sound-button")).toBeFocused();
+        await ready.keyboard.press(key);
+        await expect(ready.locator("#sound-button")).toHaveAttribute("aria-pressed", "false");
+        await expect(ready.locator("#sound-button")).toBeFocused();
+        await expect(ready.locator("#intro")).toBeVisible();
+      } finally {
+        await context.close();
+      }
+    }
+  });
   await check("pointer controls hand the next keyboard hop/bank back to the pond", async () => {
     const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
     try {

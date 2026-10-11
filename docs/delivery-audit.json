@@ -1,10 +1,10 @@
 {
   "budgetBytes": 8388608,
-  "portableFileCount": 53,
-  "portableBytesExcludingThisAudit": 2541244,
-  "portableTarGzipBytesExcludingThisAudit": 2244300,
-  "distBytes": 391395,
-  "note": "Revision snapshot candidates exclude Git metadata, supplied inputs, ephemeral scratch and seat-excluded artifacts. Includes source, lockfile, complete export, documentation, responses and seven screenshots. No ignore files or Git metadata were edited. This is a conservative file-size/tar audit, not a claim to have created the network Git bundle.",
+  "portableFileCount": 55,
+  "portableBytesExcludingThisAudit": 2847004,
+  "portableTarGzipBytesExcludingThisAudit": 2455181,
+  "distBytes": 391461,
+  "note": "Second revision snapshot candidates exclude Git metadata, supplied inputs, ephemeral scratch and seat-excluded artifacts. Includes source, lockfile, complete export, documentation, both finding responses and nine screenshots. No ignore files or Git metadata were edited. This conservative file/tar audit does not claim creation of the network Git bundle.",
   "coverDimensions": [
     1200,
     630
@@ -14,9 +14,9 @@
   "forbiddenDependencyCacheArchivePaths": [],
   "runtime": [
     {
-      "path": "dist/assets/index-Bpz9Qy4h.js",
-      "bytes": 100500,
-      "sha256": "46c5f99cc4278e583a408a2c404a0d7f8b929d162d467cf836e1437cd08d73f7"
+      "path": "dist/assets/index-BZfYLBeL.js",
+      "bytes": 100566,
+      "sha256": "4a69cb9d0d7b2e724c0f2088fcbe27c0f770d5d56df248079a8c46adeef7aeac"
     },
     {
       "path": "dist/cover.png",
@@ -56,7 +56,7 @@
     {
       "path": "dist/index.html",
       "bytes": 13476,
-      "sha256": "5ef19724a60743b6b55d924a6f7980ede3a9317f1c11fc1f521bb6ad9ef9f2d5"
+      "sha256": "3b1bf3df639ef771cc1edbfc512807b340a031c2432cf599499af51e771e7cd2"
     },
     {
       "path": "dist/pepe-game.json",

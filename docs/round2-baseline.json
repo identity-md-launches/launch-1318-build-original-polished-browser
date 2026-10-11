@@ -1,0 +1,261 @@
+{
+  "browser": "141.0.7390.37",
+  "layouts": [
+    {
+      "width": 1366,
+      "height": 657,
+      "pondHeight": 280,
+      "clientHeight": 238,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 0,
+      "restartHit": "",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "pondHeight": 338,
+      "clientHeight": 296,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 0,
+      "restartHit": "",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "pondHeight": 386,
+      "clientHeight": 344,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 18.421875,
+      "restartHit": "over-overlay",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "pondHeight": 386,
+      "clientHeight": 344,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 18.421875,
+      "restartHit": "over-overlay",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1440,
+      "height": 790,
+      "pondHeight": 408,
+      "clientHeight": 366,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 40.421875,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "pondHeight": 198,
+      "clientHeight": 180,
+      "scrollHeight": 359,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 0,
+      "focus": "restart-button"
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "pondHeight": 183,
+      "clientHeight": 165,
+      "scrollHeight": 359,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 0,
+      "focus": "restart-button"
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "pondHeight": 348,
+      "clientHeight": 330,
+      "scrollHeight": 359,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "pondHeight": 408,
+      "clientHeight": 359,
+      "scrollHeight": 359,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "pondHeight": 418,
+      "clientHeight": 376,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 50.421875,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "pondHeight": 510,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "pondHeight": 630,
+      "clientHeight": 394,
+      "scrollHeight": 394,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "pondHeight": 354,
+      "clientHeight": 328,
+      "scrollHeight": 328,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1440,
+      "height": 801,
+      "pondHeight": 419,
+      "clientHeight": 377,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 51.421875,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1440,
+      "height": 848,
+      "pondHeight": 466,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1440,
+      "height": 850,
+      "pondHeight": 468,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    },
+    {
+      "width": 1440,
+      "height": 851,
+      "pondHeight": 469,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "restartHeight": 52,
+      "restartVisible": 52,
+      "restartHit": "restart-button",
+      "focus": "restart-button"
+    }
+  ],
+  "sound": [
+    {
+      "action": "pointer Sound",
+      "focus": "sound-button",
+      "sound": "true",
+      "introVisible": true
+    },
+    {
+      "action": "Space",
+      "focus": "sound-button",
+      "sound": "false",
+      "introVisible": true
+    },
+    {
+      "action": "Enter",
+      "focus": "sound-button",
+      "sound": "true",
+      "introVisible": true
+    },
+    {
+      "action": "W",
+      "focus": "pond",
+      "sound": "true",
+      "introVisible": false
+    }
+  ],
+  "intermediateOverlayTrial": {
+    "note": "After the initial viewport-positioning fix, before elevating pond stacking context. The inert background was temporarily made hit-testable in a synchronous probe and immediately restored.",
+    "layouts": [
+      {
+        "width": 844,
+        "height": 390,
+        "restartPaintHits": [
+          "restart-button",
+          "restart-button",
+          "restart-button",
+          "restart-button",
+          "restart-button",
+          "hop-right",
+          "restart-button",
+          "restart-button",
+          "restart-button"
+        ],
+        "pondHeight": 198,
+        "clientHeight": 326,
+        "scrollHeight": 326,
+        "scrollTop": 0,
+        "restartHeight": 52,
+        "restartVisible": 52,
+        "restartHit": "restart-button",
+        "focus": "restart-button"
+      }
+    ]
+  }
+}

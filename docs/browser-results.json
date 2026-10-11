@@ -110,6 +110,74 @@
       "result": "pass"
     },
     {
+      "name": "game-over content and one-tap restart at 1366×657",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1280×720",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1366×768",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1024×768",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1440×790",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 844×390",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 667×375",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 960×540",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1024×600",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1280×800",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1440×801",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1440×848",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1440×850",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1440×851",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 541×650",
+      "result": "pass"
+    },
+    {
+      "name": "game-over content and one-tap restart at 1920×1080",
+      "result": "pass"
+    },
+    {
+      "name": "ready-screen pointer Sound preserves Space/Enter start and keyboard activation",
+      "result": "pass"
+    },
+    {
       "name": "pointer controls hand the next keyboard hop/bank back to the pond",
       "result": "pass"
     },
@@ -896,42 +964,66 @@
         {
           "selector": "#over-title",
           "height": 24,
-          "visibleHeight": 24
+          "visibleHeight": 24,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 42,
-          "visibleHeight": 42
+          "visibleHeight": 42,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 36.796875,
-          "visibleHeight": 36.796875
+          "visibleHeight": 36.796875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -948,42 +1040,66 @@
         {
           "selector": "#over-title",
           "height": 24,
-          "visibleHeight": 24
+          "visibleHeight": 24,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 36.796875,
-          "visibleHeight": 36.796875
+          "visibleHeight": 36.796875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1000,42 +1116,66 @@
         {
           "selector": "#over-title",
           "height": 24,
-          "visibleHeight": 24
+          "visibleHeight": 24,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 36.796875,
-          "visibleHeight": 36.796875
+          "visibleHeight": 36.796875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1052,42 +1192,66 @@
         {
           "selector": "#over-title",
           "height": 24,
-          "visibleHeight": 24
+          "visibleHeight": 24,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 36.796875,
-          "visibleHeight": 36.796875
+          "visibleHeight": 36.796875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1104,42 +1268,66 @@
         {
           "selector": "#over-title",
           "height": 24,
-          "visibleHeight": 24
+          "visibleHeight": 24,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 36.796875,
-          "visibleHeight": 36.796875
+          "visibleHeight": 36.796875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1156,42 +1344,66 @@
         {
           "selector": "#over-title",
           "height": 24,
-          "visibleHeight": 24
+          "visibleHeight": 24,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 36.796875,
-          "visibleHeight": 36.796875
+          "visibleHeight": 36.796875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1208,42 +1420,66 @@
         {
           "selector": "#over-title",
           "height": 38.390625,
-          "visibleHeight": 38.390625
+          "visibleHeight": 38.390625,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 55.1875,
-          "visibleHeight": 55.1875
+          "visibleHeight": 55.1875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1260,42 +1496,66 @@
         {
           "selector": "#over-title",
           "height": 38.390625,
-          "visibleHeight": 38.390625
+          "visibleHeight": 38.390625,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 55.1875,
-          "visibleHeight": 55.1875
+          "visibleHeight": 55.1875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1312,42 +1572,66 @@
         {
           "selector": "#over-title",
           "height": 38.390625,
-          "visibleHeight": 38.390625
+          "visibleHeight": 38.390625,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 55.1875,
-          "visibleHeight": 55.1875
+          "visibleHeight": 55.1875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     },
@@ -1364,45 +1648,3713 @@
         {
           "selector": "#over-title",
           "height": 38.390625,
-          "visibleHeight": 38.390625
+          "visibleHeight": 38.390625,
+          "hit": true
         },
         {
           "selector": "#loss-message",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#final-score",
           "height": 55.1875,
-          "visibleHeight": 55.1875
+          "visibleHeight": 55.1875,
+          "hit": true
         },
         {
           "selector": "#result-best",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-height",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#result-streak",
           "height": 21,
-          "visibleHeight": 21
+          "visibleHeight": 21,
+          "hit": true
         },
         {
           "selector": "#restart-button",
           "height": 52,
-          "visibleHeight": 52
+          "visibleHeight": 52,
+          "hit": true
         },
         {
           "selector": "#run-detail",
           "height": 18,
-          "visibleHeight": 18
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 657,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 657,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 790,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 790,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "banked": true,
+      "clientHeight": 326,
+      "scrollHeight": 326,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "banked": false,
+      "clientHeight": 308,
+      "scrollHeight": 308,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "banked": true,
+      "clientHeight": 326,
+      "scrollHeight": 326,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "banked": false,
+      "clientHeight": 308,
+      "scrollHeight": 308,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "banked": true,
+      "clientHeight": 326,
+      "scrollHeight": 326,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "banked": false,
+      "clientHeight": 308,
+      "scrollHeight": 308,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "banked": true,
+      "clientHeight": 326,
+      "scrollHeight": 326,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "banked": false,
+      "clientHeight": 308,
+      "scrollHeight": 308,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 801,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 801,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 848,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 848,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 850,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 850,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 851,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 851,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 541,
+      "height": 650,
+      "banked": true,
+      "clientHeight": 326,
+      "scrollHeight": 326,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 541,
+      "height": 650,
+      "banked": false,
+      "clientHeight": 308,
+      "scrollHeight": 308,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": false,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 24,
+          "visibleHeight": 24,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 36.796875,
+          "visibleHeight": 36.796875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "banked": true,
+      "clientHeight": 424,
+      "scrollHeight": 424,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "banked": false,
+      "clientHeight": 406,
+      "scrollHeight": 406,
+      "scrollTop": 0,
+      "horizontalOverflow": false,
+      "frogVisible": true,
+      "content": [
+        {
+          "selector": "#over-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#loss-message",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#final-score",
+          "height": 55.1875,
+          "visibleHeight": 55.1875,
+          "hit": true
+        },
+        {
+          "selector": "#result-best",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-height",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#result-streak",
+          "height": 21,
+          "visibleHeight": 21,
+          "hit": true
+        },
+        {
+          "selector": "#restart-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#run-detail",
+          "height": 18,
+          "visibleHeight": 18,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "restart-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
         }
       ]
     }
   ],
-  "typography": []
+  "pauseLayouts": [
+    {
+      "width": 320,
+      "height": 568,
+      "clientHeight": 278,
+      "scrollHeight": 278,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 568,
+      "clientHeight": 278,
+      "scrollHeight": 278,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "height": 650,
+      "clientHeight": 278,
+      "scrollHeight": 278,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "clientHeight": 278,
+      "scrollHeight": 278,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 657,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 790,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "clientHeight": 209,
+      "scrollHeight": 209,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "clientHeight": 209,
+      "scrollHeight": 209,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "clientHeight": 209,
+      "scrollHeight": 209,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "clientHeight": 209,
+      "scrollHeight": 209,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 801,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 848,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 850,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 851,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 541,
+      "height": 650,
+      "clientHeight": 209,
+      "scrollHeight": 209,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "clientHeight": 290,
+      "scrollHeight": 290,
+      "scrollTop": 0,
+      "content": [
+        {
+          "selector": "#pause-title",
+          "height": 38.390625,
+          "visibleHeight": 38.390625,
+          "hit": true
+        },
+        {
+          "selector": "#resume-button",
+          "height": 52,
+          "visibleHeight": 52,
+          "hit": true
+        },
+        {
+          "selector": "#pause-restart",
+          "height": 44,
+          "visibleHeight": 44,
+          "hit": true
+        }
+      ],
+      "paintOrder": [
+        {
+          "button": "resume-button",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "button": "pause-restart",
+          "hits": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    }
+  ],
+  "readyInput": [
+    {
+      "key": "Space",
+      "started": true,
+      "soundEnabled": true,
+      "focus": "pond"
+    },
+    {
+      "key": "Enter",
+      "started": true,
+      "soundEnabled": true,
+      "focus": "pond"
+    }
+  ]
 }

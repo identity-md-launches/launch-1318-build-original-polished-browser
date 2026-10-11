@@ -54,10 +54,11 @@ Implemented breakpoints:
 - **540px and below:** 14px page insets, one-column aside, 32px title, 20px stats, 44px scene utility buttons and touch instructions. Keyboard keycaps are hidden. The ready scene uses viewport-aware height and a 26rem minimum so enlarged intro text stays inside it.
 - **360px and below:** 10px page insets and less decorative HUD detail.
 - **During mobile play:** `body.in-run` hides the introductory page header and gives the game the first viewport; instructions and records remain below it. BANK stays in the bottom action bar.
-- **Mobile results at widths up to 540px and heights up to 650px:** hide the decorative result frog, use `--fs-lg` (20px) for the result heading and `--fs-title` (32px) for the score. Loss copy, records and the full 52px restart button fit without card scrolling at the checked 320×568, 390×568 and 540×650 sizes. Taller mobile and desktop results retain their larger presentation.
+- **Results at heights up to 650px, at every width:** hide the decorative result frog, use `--fs-lg` (20px) for the result heading and `--fs-title` (32px) for the score. This also covers landscape phones and short embeds. Taller results retain their larger presentation.
+- **Dialogs above 540px wide and up to 850px tall:** `.in-run .overlay` uses `position: fixed` with the existing zero inset, centering pause/results in the viewport instead of the shrinking pond. The pond stacking context is raised to z-index 1 here so later disabled controls cannot paint above the dialogs. The 850px boundary covers the full result card plus pond insets; an 800px cutoff still clips content at 801px. Portrait phone dialogs and desktop viewports taller than 850px keep their existing pond-relative positioning. Card overflow remains available for content beyond the checked sizes.
 - **Short desktop/landscape play:** height queries at 950px and 650px compact or hide page chrome, reduce scene height and preserve controls. `Renderer.resize()` adjusts illustration scale and `Game.cameraFollow` to keep the frog visible in the shorter scene.
 
-Inspected ready widths are 320, 390, 820, 1024 and 1440px. Active layout measurements include 320×568 and 844×390. Text was enlarged to 200% at 820px; native browser zoom was not exercised. The product is English-only; RTL/localization is not implemented.
+Inspected ready widths are 320, 390, 820, 1024 and 1440px. Active layout measurements include 320×568 and 844×390. Pause and result dialogs were measured at 21 sizes, including 1366×657, 844×390 and both sides of the 850px boundary; all records, run detail and restart fit without scrolling. See `docs/validation.md` for the exact matrix and limits. Text was enlarged to 200% at 820px; native browser zoom was not exercised. The product is English-only; RTL/localization is not implemented.
 
 ## Elevation & depth
 
@@ -65,7 +66,7 @@ Page and cards use tonal green differences, low-contrast structural borders and 
 
 The canvas is the lowest game layer. Scene tools and toasts are at z-index 3; dialogs are at 5. The skip link is at 20. Decorative canvas art and notification layers do not intercept button input. Modals make the surrounding content inert, move focus inside, trap Tab, and return focus to the pond on resume.
 
-During a run, pointer clicks/taps on Sound, either hop button or BANK return focus to the pond without scrolling. The next Space/Enter therefore hops/banks. Buttons reached with Tab retain focus and native Space/Enter activation.
+Pointer clicks/taps on Sound, either hop button or BANK return focus to the pond without scrolling. On the ready screen, Space/Enter then starts the run; during play they hop/bank. Buttons reached with Tab retain focus and native Space/Enter activation in both states. Sound and the gameplay controls remain inert under pause/result dialogs.
 
 ## Shapes
 
@@ -83,7 +84,7 @@ During a run, pointer clicks/taps on Sound, either hop button or BANK return foc
 | Pond                 | `Renderer` in `src/renderer.ts`    | Resizes at capped 2× pixel density; original night scene, rare flies, three frog expressions and pot growth/shake |
 | Pad warning          | `.play-status`, `.pad-timer`       | Named hazard/direction plus a draining life bar; final 10 seconds explicitly prompt BANK                          |
 | Feedback             | `.pond-toast`, `role="status"`     | Short banking/combo/fly announcements; static text supplements particle effects                                   |
-| Pause/result dialogs | `.overlay`, `.overlay-card`        | Native buttons, bounded card with overflow fallback, inert background and focus trap; compact mobile results fit without scrolling and restart begins immediately |
+| Pause/result dialogs | `.overlay`, `.overlay-card`        | Native buttons, bounded card with overflow fallback, inert background and focus trap; compact short-screen results fit without scrolling and restart begins immediately |
 | Records              | `.records-card`, `RecordStore`     | Local bests and streak; visible session-only fallback; corrupt records safely reset                               |
 | Help                 | `.how-card`, `.pond-guide`         | Three steps, clear pad symbols and golden-fly explanation; normal document flow                                   |
 
